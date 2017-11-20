@@ -5,6 +5,7 @@
 var Templates = require('../Templates');
 var LocalStorage = require('./LocalStorage');
 var API = require('../API');
+
 //Перелік розмірів піци
 var PizzaSize = {
     Big: "big_size",
@@ -93,7 +94,7 @@ function updateCart() {
     $cart.html("");
     if($(".order-label .count").text()==="0"){
         $("#butt-order").attr("disabled", "");
-        $cart.html("<div id=\"is-empty\"><p>Пусто в холодильнику?</p><p>Замов піцу!</p></div>");
+        $cart.html("<div id=\"is-empty\" style=\"text-align: center;\"><p>Пусто в холодильнику?</p><p>Замов піцу!</p></div>");
     } else {
         $("#butt-order").removeAttr("disabled");
         $("#is-empty").hide();

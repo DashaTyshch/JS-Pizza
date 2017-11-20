@@ -16,6 +16,7 @@ function configureEndpoints(app) {
     app.get('/api/get-pizza-list/', api.getPizzaList);
     app.post('/api/create-order/', api.createOrder);
 
+
     //Сторінки
     //Головна сторінка
     app.get('/', pages.mainPage);
