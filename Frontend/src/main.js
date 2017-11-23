@@ -199,7 +199,7 @@ if(window.location.href.indexOf('order')!== -1) {
         }
     }
     function checkName(input, a, help) {
-        if (input.match(/^[a-zA-Zа-яА-Я \-]{1,25}$/)) {
+        if (input.match(/^[a-zA-Zа-яієїА-ЯІЇЄ \-]{1,25}$/)) {
             $(help).hide();
             $(a).removeClass("has-error");
             $(a).addClass("has-success");

@@ -1,5 +1,7 @@
 <% include common/header.ejs %>
 
+<% include common/topPanel.ejs %>
+
 <div class="container">
     <div class="inner-container">
         <div class="all-title"><span class="text">Усі піци</span><span class="badge orange all-count">8</span></div>
@@ -18,8 +20,6 @@
     </div>
 </div>
 
-<% include common/topPanel.ejs %>
-
 <div class="right-column">
     <div class="order-panel">
         <span class="order-label"><span class="title">Замовлення</span><span class="badge orange count">0</span></span>
@@ -31,7 +31,7 @@
         <div class="sum"><span class="title">Сума замовлення</span> <span id="count-sum"></span></div>
         <div class="to-order">
             <form>
-                <input id="butt-order" class="btn btn-lg btn-primary btn-block" type="button" value="Замовити" onclick="window.location.href='/order.html'" />
+                <input id="butt-order" class="btn btn-lg btn-primary btn-block" type="button" value="Замовити" onclick="window.location.href='/order.html'"/>
             </form>
         </div>
     </div>
